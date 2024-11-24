@@ -4,28 +4,51 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Training Tailwind CSS</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet" />
         <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        sans: ["Mulish", "sans-serif"],
+                        mono: ["Rokkit", "monospace"]
+                    }
+                }
+            }
+        </script>
     </head>
     <body>
         <main class="flex mx-auto min-h-screen items-center justify-center bg-slate-800">
             <div class="flex flex-col p-5 gap-3 bg-slate-300 rounded-xl">
                 <h1 class="text-3xl">Training Tailwind CSS</h1>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
                     <a class="p-5 inline-block w-full" href="email-subscribe/index.html">Email subscribe form</a>
                 </div>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
-                    <a class="p-5 inline-block w-full" href="functions-directives/index.html">Functions &amp; directives</a>
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                    <a class="p-5 inline-block w-full" href="functions-directives/index.html"
+                        >Functions &amp; directives</a
+                    >
                 </div>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
                     <a class="p-5 inline-block w-full" href="image-gallery/index.html">Image gallery</a>
                 </div>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
                     <a class="p-5 inline-block w-full" href="login-modal/index.html">Login modal</a>
                 </div>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
                     <a class="p-5 inline-block w-full" href="pricing-cards/index.html">Pricing cards</a>
                 </div>
-                <div class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
+                <div
+                    class="border-b border-b-slate-800 hover:bg-slate-800 hover:text-white hover:translate-x-5 hover:rounded-l-lg transition">
                     <a class="p-5 inline-block w-full" href="product-modal/index.html">Product modal</a>
                 </div>
             </div>
